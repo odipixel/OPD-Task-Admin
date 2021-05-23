@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .odp-main-wrapper {
+        display: flex !important;
+        /* flex-wrap: nowrap;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        overflow-x: auto;
+        overflow-y: hidden; */
+        flex-direction: column;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+      .odp-row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+      }
+      .odp-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .odp-pos-relative {
+        position: relative;
+      }
+      .odp-h-15 {
+        height: 15% !important;
+      }
+      .odp-side-nav {
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="odp-main-wrapper">
+      <!-- <div id="root"></div> -->
+      <div class="odp-row">
+        <%= require('html-loader!./views/partials/sidenav.html').default %>
+
+        <div class="odp-row">
+          <div class="w-100">
+            <%= require('html-loader!./views/partials/header.html').default %>
+            <%= require('html-loader!./views/content.html').default %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,29 @@
-MIT License
+
+# OPD task Admin
+
+OPD task Admin is an Admin dashboard bundles with bootstrap5 and webpack5.
+
+![OPD task Admin](https://github.com/odipixel/op-landing/blob/main/src/assets/images/taskadmin.PNG)
+
+## Installation
+
+Use the node package manager [npm](https://www.npmjs.com/) to install oplanding dependancies.
+
+```bash
+npm install
+```
+
+## Usage
+
+```python
+npm run start
+```
+open any browser and type [localhost:8080](localhost:8080)
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
 
 Copyright (c) 2021 Kishore Mallick
 
