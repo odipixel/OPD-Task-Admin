@@ -3,7 +3,7 @@
 
 OPD task Admin is an Admin dashboard bundles with bootstrap5 and webpack5.
 
-![OPD task Admin](https://github.com/odipixel/op-landing/blob/main/src/assets/images/taskadmin.PNG)
+![OPD task Admin](https://github.com/odipixel/OPD-Task-Admin/blob/main/src/images/taskadmin.PNG)
 
 ## Installation
 
